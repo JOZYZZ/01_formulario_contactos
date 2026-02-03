@@ -11,9 +11,44 @@ $mensaje = "Proyecto PHP funcionando correctamente";
 </head>
 <body>
 
-    <h1><?php echo $mensaje; ?></h1>
+    <header>
+        <h1><?php echo $mensaje; ?></h1>
+        <p>Formulario de contacto básico con PHP</p>
+    </header>
 
-    <p>Este es el inicio de nuestro proyecto con PHP.</p>
+    <main>
+        <form method="post" action="">
+            
+            <div>
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+
+            <br>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Proyecto 01 - Aprendiendo PHP paso a paso</p>
+    </footer>
 
 </body>
+
 </html>
